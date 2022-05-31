@@ -13,7 +13,22 @@
       "image": "eclipse-mosquitto",
       "restart_policy": "always",
       "network": "cg-edge",
-      "ports": ["1883/tcp"]
-      
+      "ports": ["1883/tcp"],
+      "volumes": [
+        {
+          "container": "/mosquitto/config",
+	  "bind": "~/apps/datalake/config",
+          "readonly": true
+        },
+        {
+          "container": "/mosquitto/data",
+	  "bind": "~/apps/datalake/data"
+        },
+        {
+          "container": "/mosquitto/log",
+	  "bind": "~/apps/datalake/log"
+        }
+      ]
     }
+  ]
 }
