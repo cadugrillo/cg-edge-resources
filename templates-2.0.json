@@ -3,18 +3,31 @@
   "templates": [
     {
       "type": 1,
-      "title": "Registry",
-      "description": "Docker image registry",
-      "categories": ["docker"],
+      "title": "Datalake",
+      "name": "Datalake",
+      "hostname": "datalake",
+      "description": "Local Datalake for Apps",
+      "categories": ["cg-apps"],
       "platform": "linux",
-      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/registry.png",
-      "image": "registry:latest",
-      "ports": ["5000/tcp"],
+      "logo": "https://raw.githubusercontent.com/cadugrillo/cg-edge-resources/main/cg-logo.png",
+      "image": "eclipse-mosquitto",
+      "restart_policy": "always",
+      "network": "cg-edge",
+      "ports": ["1883/tcp"],
       "volumes": [
         {
-          "container": "/var/lib/registry"
+          "container": "/mosquitto/config",
+	  "bind": "~/apps/datalake/config",
+          "readonly": true
+        },
+        {
+          "container": "/mosquitto/data",
+	  "bind": "~/apps/datalake/data"
+        },
+        {
+          "container": "/mosquitto/log",
+	  "bind": "~/apps/datalake/log"
         }
       ]
     }
-  ]  
 }
