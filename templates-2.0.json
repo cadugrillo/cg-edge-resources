@@ -29,6 +29,67 @@
 	  "bind": "~/apps/datalake/log"
         }
       ]
+    },
+    {
+      "type": 1,
+      "title": "MQTT Cloud Connetor",
+      "name": "MQTT Cloud Connetor",
+      "hostname": "mqtt-cloud-connector",
+      "description": "Connect any topic from Local DataLake to any Cloud Provider",
+      "categories": ["cg-apps"],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/cadugrillo/cg-edge-resources/main/cg-logo.png",
+      "image": "cadugrillo/mqtt-cloud-connector:1.3",
+      "restart_policy": "always",
+      "network": "cg-edge",
+      "volumes": [
+        {
+          "container": "/config",
+	  "bind": "~/apps/mqtt-cloud-connector/config"
+        },
+        {
+          "container": "/certs",
+	  "bind": "~/apps/mqtt-cloud-connector/certs"
+        }
+      ]
+    },
+    {
+      "type": 1,
+      "title": "Node Creator",
+      "name": "Node Creator",
+      "hostname": "node-creator",
+      "description": "Create data flows using nodes",
+      "categories": ["cg-apps"],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/cadugrillo/cg-edge-resources/main/cg-logo.png",
+      "image": "nodered/node-red",
+      "restart_policy": "always",
+      "network": "cg-edge",
+      "ports": ["1880:1880/tcp"],
+      "volumes": [
+        {
+          "container": "/data"
+        }
+      ]
+    },
+    {
+      "type": 1,
+      "title": "OPC-UA MQTT Connetor",
+      "name": "OPC-UA MQTT Connetor",
+      "hostname": "opcua-mqtt-connector",
+      "description": "Connect any OPC-UA Server to Local DataLake",
+      "categories": ["cg-apps"],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/cadugrillo/cg-edge-resources/main/cg-logo.png",
+      "image": "cadugrillo/opcua-mqtt-connector:1.0",
+      "restart_policy": "always",
+      "network": "cg-edge",
+      "volumes": [
+        {
+          "container": "/config",
+	  "bind": "~/apps/opcua-mqtt-connector/config"
+        }
+      ]
     }
   ]
 }
