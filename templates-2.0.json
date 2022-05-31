@@ -17,16 +17,16 @@
       "volumes": [
         {
           "container": "/mosquitto/config",
-	  "bind": "~/apps/datalake/config",
+	  "bind": "/home/edge/apps/datalake/config",
           "readonly": true
         },
         {
           "container": "/mosquitto/data",
-	  "bind": "~/apps/datalake/data"
+	  "bind": "/home/edge/apps/datalake/data"
         },
         {
           "container": "/mosquitto/log",
-	  "bind": "~/apps/datalake/log"
+	  "bind": "/home/edge/apps/datalake/log"
         }
       ]
     },
@@ -45,11 +45,11 @@
       "volumes": [
         {
           "container": "/config",
-	  "bind": "~/apps/mqtt-cloud-connector/config"
+	  "bind": "/home/edge/apps/mqtt-cloud-connector/config"
         },
         {
           "container": "/certs",
-	  "bind": "~/apps/mqtt-cloud-connector/certs"
+	  "bind": "/home/edge/apps/mqtt-cloud-connector/certs"
         }
       ]
     },
@@ -87,7 +87,7 @@
       "volumes": [
         {
           "container": "/config",
-	  "bind": "~/apps/opcua-mqtt-connector/config"
+	  "bind": "/home/edge/apps/opcua-mqtt-connector/config"
         }
       ]
     }
