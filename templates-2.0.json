@@ -33,7 +33,7 @@
     {
       "type": 1,
       "title": "MQTT Cloud Connetor",
-      "name": "MQTT Cloud Connetor",
+      "name": "MQTT-Cloud-Connetor",
       "hostname": "mqtt-cloud-connector",
       "description": "Connect any topic from Local DataLake to any Cloud Provider",
       "categories": ["cg-apps"],
@@ -56,7 +56,7 @@
     {
       "type": 1,
       "title": "Node Creator",
-      "name": "Node Creator",
+      "name": "Node-Creator",
       "hostname": "node-creator",
       "description": "Create data flows using nodes",
       "categories": ["cg-apps"],
@@ -75,7 +75,7 @@
     {
       "type": 1,
       "title": "OPC-UA MQTT Connetor",
-      "name": "OPC-UA MQTT Connetor",
+      "name": "OPC-UA-MQTT-Connetor",
       "hostname": "opcua-mqtt-connector",
       "description": "Connect any OPC-UA Server to Local DataLake",
       "categories": ["cg-apps"],
