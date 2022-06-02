@@ -81,7 +81,7 @@
       "categories": ["cg-apps"],
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/cadugrillo/cg-edge-resources/main/cg-logo.png",
-      "image": "cadugrillo/opcua-mqtt-connector:1.0",
+      "image": "cadugrillo/opcua-mqtt-connector:1.1",
       "restart_policy": "always",
       "network": "cg-edge",
       "volumes": [
