@@ -122,7 +122,7 @@
       "image": "cadugrillo/cg-edge-conf:1.0",
       "restart_policy": "always",
       "network": "cg-edge-conf",
-      "ports": ["80:80/tcp"],	    
+      "ports": ["80:80/tcp"]	    
     }	  
   ]
 }
