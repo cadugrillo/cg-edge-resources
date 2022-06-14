@@ -14,21 +14,9 @@
       "restart_policy": "always",
       "network": "cg-edge",
       "ports": ["1883/tcp"],
-      "volumes": [
-        {
-          "container": "/mosquitto/config",
-	  "bind": "/home/edge/apps/datalake/config",
-          "readonly": true
-        },
-        {
-          "container": "/mosquitto/data",
-	  "bind": "/home/edge/apps/datalake/data"
-        },
-        {
-          "container": "/mosquitto/log",
-	  "bind": "/home/edge/apps/datalake/log"
-        }
-      ]
+      "volumes": ["/home/edge/apps/datalake/config:/mosquitto/config",
+		  "/home/edge/apps/datalake/data:/mosquitto/data",
+		  "/home/edge/apps/datalake/log:/mosquitto/log"]
     },
     {
       "type": 1,
@@ -42,16 +30,8 @@
       "image": "cadugrillo/mqtt-cloud-connector:1.4",
       "restart_policy": "always",
       "network": "cg-edge",
-      "volumes": [
-        {
-          "container": "/config",
-	  "bind": "/home/edge/apps/mqtt-cloud-connector/config"
-        },
-        {
-          "container": "/certs",
-	  "bind": "/home/edge/apps/mqtt-cloud-connector/certs"
-        }
-      ]
+      "volumes": ["/home/edge/apps/mqtt-cloud-connector/config:/config",
+		  "/home/edge/apps/mqtt-cloud-connector/certs:/certs"]
     },
     {
       "type": 1,
@@ -66,11 +46,7 @@
       "restart_policy": "always",
       "network": "cg-edge",
       "ports": ["1880:1880/tcp"],
-      "volumes": [
-        {
-          "container": "/data"
-        }
-      ]
+      "volumes": ["/data"]
     },
     {
       "type": 1,
@@ -84,12 +60,7 @@
       "image": "cadugrillo/opcua-mqtt-connector:1.4",
       "restart_policy": "always",
       "network": "cg-edge",
-      "volumes": [
-        {
-          "container": "/config",
-	  "bind": "/home/edge/apps/opcua-mqtt-connector/config"
-        }
-      ]
+      "volumes": ["/home/edge/apps/opcua-mqtt-connector/config:/config"]
     },
     {
       "type": 1,
@@ -103,12 +74,7 @@
       "image": "cadugrillo/cg-edge-conf-api:1.0",
       "restart_policy": "always",
       "network": "cg-edge-conf",
-      "volumes": [
-        {
-          "container": "/apps",
-	  "bind": "/home/edge/apps"
-        }
-      ]
+      "volumes": ["/home/edge/apps:/apps"]
     },
     {
       "type": 1,
