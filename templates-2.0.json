@@ -61,34 +61,6 @@
       "restart_policy": "always",
       "network": "cg-edge",
       "volumes": ["/home/edge/apps/opcua-mqtt-connector/config:/config"]
-    },
-    {
-      "type": 1,
-      "title": "CG-EDGE Configurator API",
-      "name": "CG-EDGE-Configurator-API",
-      "hostname": "cg-edge-conf-api",
-      "description": "API endpoint to configure apps from Web Browser",
-      "categories": ["cg-config"],
-      "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/cadugrillo/cg-edge-resources/main/cg-logo-small.png",
-      "image": "cadugrillo/cg-edge-conf-api:1.0",
-      "restart_policy": "always",
-      "network": "cg-conf",
-      "volumes": ["/home/edge/apps:/apps"]
-    },
-    {
-      "type": 1,
-      "title": "CG-EDGE Configurator",
-      "name": "CG-EDGE-Configurator",
-      "hostname": "cg-edge-conf",
-      "description": "Front-end application to configure apps from Web Browser",
-      "categories": ["cg-config"],
-      "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/cadugrillo/cg-edge-resources/main/cg-logo-small.png",
-      "image": "cadugrillo/cg-edge-conf:1.0",
-      "restart_policy": "always",
-      "network": "cg-conf",
-      "ports": ["80:80/tcp"]	    
     }  
   ]
 }
