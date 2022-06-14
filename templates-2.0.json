@@ -73,7 +73,7 @@
       "logo": "https://raw.githubusercontent.com/cadugrillo/cg-edge-resources/main/cg-logo-small.png",
       "image": "cadugrillo/cg-edge-conf-api:1.0",
       "restart_policy": "always",
-      "network": "cg-edge-conf",
+      "network": "cg-conf",
       "volumes": ["/home/edge/apps:/apps"]
     },
     {
@@ -87,7 +87,7 @@
       "logo": "https://raw.githubusercontent.com/cadugrillo/cg-edge-resources/main/cg-logo-small.png",
       "image": "cadugrillo/cg-edge-conf:1.0",
       "restart_policy": "always",
-      "network": "cg-edge-conf",
+      "network": "cg-conf",
       "ports": ["80:80/tcp"]	    
     }  
   ]
