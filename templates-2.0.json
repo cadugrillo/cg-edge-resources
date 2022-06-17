@@ -75,7 +75,7 @@
       "restart_policy": "always",
       "network": "cg-edge",
       "ports": ["3000:3000/tcp"],
-      "volumes": ["grafana-storage:/var/lib/grafana"]
+      "volumes": ["/var/lib/grafana"]
     }
   ]
 }
