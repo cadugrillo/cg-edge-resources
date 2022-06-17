@@ -76,6 +76,21 @@
       "network": "cg-edge",
       "ports": ["3000:3000/tcp"],
       "volumes": ["/var/lib/grafana"]
+    },
+    {
+      "type": 1,
+      "title": "InfluxDB",
+      "name": "InfluxDB",
+      "hostname": "influxdb",
+      "description": "InfluxDB is an open source time series database for recording metrics, events, and analytics.",
+      "categories": ["cg-apps"],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/cadugrillo/cg-edge-resources/main/influxdb-logo.png",
+      "image": "influxdb:2.0",
+      "restart_policy": "always",
+      "network": "cg-edge",
+      "ports": ["8086:8086/tcp"],
+      "volumes": ["/var/lib/influxdb2"]
     }
   ]
 }
