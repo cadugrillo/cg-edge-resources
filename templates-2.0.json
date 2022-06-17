@@ -61,6 +61,21 @@
       "restart_policy": "always",
       "network": "cg-edge",
       "volumes": ["/home/edge/apps/opcua-mqtt-connector/config:/config"]
-    }  
+    },
+    {
+      "type": 1,
+      "title": "Grafana",
+      "name": "Grafana",
+      "hostname": "grafana",
+      "description": "Query, visualize, alert on, and understand your data no matter where it’s stored.",
+      "categories": ["cg-apps"],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/cadugrillo/cg-edge-resources/main/grafana-logo.png",
+      "image": "grafana/grafana",
+      "restart_policy": "always",
+      "network": "cg-edge",
+      "ports": ["3000:3000/tcp"],
+      "volumes": ["grafana-storage:/var/lib/grafana"]
+    }
   ]
 }
