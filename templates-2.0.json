@@ -15,9 +15,9 @@
       "restart_policy": "always",
       "network": "cg-edge",
       "ports": ["1883/tcp"],
-      "volumes": ["/home/edge/apps/datalake/config:/mosquitto/config",
-		  "/home/edge/apps/datalake/data:/mosquitto/data",
-		  "/home/edge/apps/datalake/log:/mosquitto/log"]
+      "volumes": ["/home/admin/apps/datalake/config:/mosquitto/config",
+		  "/home/admin/apps/datalake/data:/mosquitto/data",
+		  "/home/admin/apps/datalake/log:/mosquitto/log"]
     },
     {
       "type": 1,
@@ -32,8 +32,8 @@
       "image": "cadugrillo/mqtt-cloud-connector:1.4",
       "restart_policy": "always",
       "network": "cg-edge",
-      "volumes": ["/home/edge/apps/mqtt-cloud-connector/config:/config",
-		  "/home/edge/apps/mqtt-cloud-connector/certs:/certs"]
+      "volumes": ["/home/admin/apps/mqtt-cloud-connector/config:/config",
+		  "/home/admin/apps/mqtt-cloud-connector/certs:/certs"]
     },
     {
       "type": 1,
@@ -64,7 +64,7 @@
       "image": "cadugrillo/opcua-mqtt-connector:1.5",
       "restart_policy": "always",
       "network": "cg-edge",
-      "volumes": ["/home/edge/apps/opcua-mqtt-connector/config:/config"]
+      "volumes": ["/home/admin/apps/opcua-mqtt-connector/config:/config"]
     },
     {
       "type": 1,
