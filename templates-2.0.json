@@ -14,6 +14,7 @@
       "image": "eclipse-mosquitto",
       "restart_policy": "always",
       "network": "cg-edge",
+      "env": [],
       "ports": ["1883/tcp"],
       "volumes": ["/home/edge/apps/datalake/config:/mosquitto/config",
 		  "/home/edge/apps/datalake/data:/mosquitto/data",
@@ -32,6 +33,7 @@
       "image": "cadugrillo/mqtt-cloud-connector:1.4",
       "restart_policy": "always",
       "network": "cg-edge",
+      "env": [],	    
       "volumes": ["/home/edge/apps/mqtt-cloud-connector/config:/config",
 		  "/home/edge/apps/mqtt-cloud-connector/certs:/certs"]
     },
@@ -48,6 +50,7 @@
       "image": "nodered/node-red",
       "restart_policy": "always",
       "network": "cg-edge",
+      "env": [],
       "ports": ["1880:1880/tcp"],
       "volumes": ["/data"]
     },
@@ -64,6 +67,7 @@
       "image": "cadugrillo/opcua-mqtt-connector:1.5",
       "restart_policy": "always",
       "network": "cg-edge",
+      "env": [],	    
       "volumes": ["/home/edge/apps/opcua-mqtt-connector/config:/config"]
     },
     {
@@ -79,6 +83,7 @@
       "image": "grafana/grafana",
       "restart_policy": "always",
       "network": "cg-edge",
+      "env": [],
       "ports": ["3000:3000/tcp"],
       "volumes": ["/var/lib/grafana"]
     },
@@ -95,6 +100,7 @@
       "image": "influxdb:2.0",
       "restart_policy": "always",
       "network": "cg-edge",
+      "env": [],
       "ports": ["8086:8086/tcp"],
       "volumes": ["/var/lib/influxdb2"]
     }
