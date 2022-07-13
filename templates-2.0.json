@@ -101,8 +101,8 @@
       "restart_policy": "always",
       "network": "cg-edge",
       "env": ["DOCKER_INFLUXDB_INIT_USERNAME=cguser", "DOCKER_INFLUXDB_INIT_PASSWORD=cguser01"],
-      "ports": ["8090:8086/tcp"],
-      "volumes": ["/var/lib/influxdb2"]
+      "ports": ["8086:8086/tcp"],
+      "volumes": ["influxdb-data:/var/lib/influxdb2"]
     }
   ]
 }
