@@ -52,7 +52,7 @@
       "network": "cg-edge",
       "env": [],
       "ports": ["1880:1880/tcp"],
-      "volumes": ["/data"]
+      "volumes": ["nodered-data:/data"]
     },
     {
       "type": 1,
@@ -85,7 +85,7 @@
       "network": "cg-edge",
       "env": [],
       "ports": ["3000:3000/tcp"],
-      "volumes": ["/var/lib/grafana"]
+      "volumes": ["grafana-data:/var/lib/grafana"]
     },
     {
       "type": 1,
@@ -97,7 +97,7 @@
       "categories": ["cg-apps"],
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/cadugrillo/cg-edge-resources/main/influxdb-logo.png",
-      "image": "influxdb:2.0",
+      "image": "influxdb:2.3",
       "restart_policy": "always",
       "network": "cg-edge",
       "env": ["DOCKER_INFLUXDB_INIT_MODE=setup",
