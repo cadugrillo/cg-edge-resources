@@ -30,7 +30,7 @@
       "categories": ["cg-apps"],
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/cadugrillo/cg-edge-resources/main/cg-logo-small.png",
-      "image": "cadugrillo/mqtt-cloud-connector:1.5",
+      "image": "cadugrillo/mqtt-cloud-connector:1.6",
       "restart_policy": "always",
       "network": "cg-edge",
       "env": [],	    
