@@ -107,6 +107,23 @@
 	      "DOCKER_INFLUXDB_INIT_BUCKET=cg-bucket1"],
       "ports": ["8086:8086/tcp"],
       "volumes": ["influxdb-data:/var/lib/influxdb2"]
-    }
+    },
+    {
+      "type": 1,
+      "title": "Orchestra Juno",
+      "name": "OrchestraJuno",
+      "hostname": "Orchestra-Juno",
+      "description": "As a self-contained app, Orchestra juno has everything it takes to connect the most diverse decentralized systems.",
+      "info_url": "https://orchestra.soffico.de/en/orchestra-juno/",
+      "categories": ["cg-apps"],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/cadugrillo/cg-edge-resources/main/sofco.png",
+      "image": "oie-juno:OISB-13.0",
+      "restart_policy": "always",
+      "network": "cg-edge",
+      "env": [],
+      "ports": ["8090:8090/tcp"],
+      "volumes": []
+    }	  
   ]
 }
