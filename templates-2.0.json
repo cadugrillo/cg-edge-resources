@@ -117,7 +117,7 @@
       "info_url": "https://orchestra.soffico.de/en/orchestra-juno/",
       "categories": ["cg-apps"],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/cadugrillo/cg-edge-resources/main/sofco.png",
+      "logo": "https://raw.githubusercontent.com/cadugrillo/cg-edge-resources/main/Sofco.png",
       "image": "oie-juno:OISB-13.0",
       "restart_policy": "always",
       "network": "cg-edge",
