@@ -110,8 +110,8 @@
     },
     {
       "type": 1,
-      "title": "Orchestra Juno",
-      "name": "OrchestraJuno",
+      "title": "Orchestra-Juno",
+      "name": "Orchestra-Juno",
       "hostname": "Orchestra-Juno",
       "description": "As a self-contained app, Orchestra juno has everything it takes to connect the most diverse decentralized systems.",
       "info_url": "https://orchestra.soffico.de/en/orchestra-juno/",
