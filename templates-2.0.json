@@ -22,8 +22,8 @@
     },
     {
       "type": 1,
-      "title": "MQTT Cloud Connector",
-      "name": "MQTT-Cloud-Connector",
+      "title": "Mqtt Cloud Connector",
+      "name": "Mqtt-Cloud-Connector",
       "hostname": "mqtt-cloud-connector",
       "description": "Connect any topic from Local DataLake to any Cloud Provider",
       "info_url": "",
@@ -56,8 +56,8 @@
     },
     {
       "type": 1,
-      "title": "OPCUA MQTT Connector",
-      "name": "OPCUA-MQTT-Connector",
+      "title": "Opcua Mqtt Connector",
+      "name": "Opcua-Mqtt-Connector",
       "hostname": "opcua-mqtt-connector",
       "description": "Connect any OPC-UA Server to Local DataLake",
       "info_url": "",
