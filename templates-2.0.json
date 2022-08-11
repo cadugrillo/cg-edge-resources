@@ -10,7 +10,7 @@
       "info_url": "https://mosquitto.org/",    
       "categories": ["cg-apps"],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/cadugrillo/cg-edge-resources/main/cg-logo-small.png",
+      "logo": "https://raw.githubusercontent.com/cadugrillo/cg-edge-resources/main/mosquitto-logo.png",
       "image": "eclipse-mosquitto",
       "restart_policy": "always",
       "network": "cg-edge",
