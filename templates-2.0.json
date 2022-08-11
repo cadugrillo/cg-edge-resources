@@ -42,7 +42,7 @@
       "title": "Node Creator",
       "name": "Node-Creator",
       "hostname": "node-creator",
-      "description": "Create data flows using nodes",
+      "description": "Create data flows using nodes based on Node-RED. Low-code programming for event-driven applications.",
       "info_url": "https://nodered.org/",
       "categories": ["cg-apps"],
       "platform": "linux",
