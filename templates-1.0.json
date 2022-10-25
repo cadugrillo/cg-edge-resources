@@ -16,9 +16,9 @@
       "network": "cg-edge",
       "env": [],
       "ports": ["1883/tcp"],
-      "volumes": ["/home/edge/apps/datalake/config:/mosquitto/config",
-		  "/home/edge/apps/datalake/data:/mosquitto/data",
-		  "/home/edge/apps/datalake/log:/mosquitto/log"]
+      "volumes": ["cgedge-apps:/mosquitto/config",
+		  "cgedge-apps:/mosquitto/data",
+		  "cgedge-apps:/mosquitto/log"]
     },
     {
       "type": 1,
