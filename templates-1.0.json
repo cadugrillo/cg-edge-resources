@@ -49,7 +49,7 @@
       "logo": "https://raw.githubusercontent.com/cadugrillo/cg-edge-resources/main/nodered-logo.png",
       "image": "nodered/node-red",
       "restart_policy": "always",
-      "network": "bridge",
+      "network": "cg-edge",
       "env": [],
       "ports": ["1880:1880/tcp"],
       "volumes": ["nodered-data:/data"]
