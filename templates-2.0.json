@@ -107,6 +107,23 @@
 	      "DOCKER_INFLUXDB_INIT_BUCKET=cg-bucket1"],
       "ports": ["8086:8086/tcp"],
       "volumes": ["influxdb-data:/var/lib/influxdb2"]
-    }  
+    },
+     {
+      "type": 1,
+      "title": "Mongo",
+      "name": "Mongo",
+      "hostname": "mongo",
+      "description": "Open-source document-oriented database.",
+      "info_url": "https://www.mongodb.com/",
+      "categories": ["database"],
+      "platform": "linux",
+      "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/mongo.png",
+      "image": "mongo:latest",
+      "restart_policy": "unless-stopped",
+      "network": "cg-edge",
+      "env": [],
+      "ports": ["27017:27017/tcp"],
+      "volumes": ["mongo-data:/data/db"]
+    }
   ]
 }
