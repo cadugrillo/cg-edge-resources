@@ -121,7 +121,8 @@
       "image": "mongo:4.4",
       "restart_policy": "unless-stopped",
       "network": "cg-edge",
-      "env": [],
+      "env": ["MONGO_INITDB_ROOT_USERNAME=root",
+	      "MONGO_INITDB_ROOT_PASSWORD=root"],
       "ports": ["27017:27017/tcp"],
       "volumes": ["mongo-data:/data/db"]
     }
