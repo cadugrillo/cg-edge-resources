@@ -33,7 +33,8 @@
       "image": "cadugrillo/mqtt-cloud-connector:1.6",
       "restart_policy": "always",
       "network": "cg-edge",
-      "env": [],	    
+      "env": [],
+      "ports": [],
       "volumes": ["/home/edge/apps/mqtt-cloud-connector/config:/config",
 		  "/home/edge/apps/mqtt-cloud-connector/certs:/certs"]
     },
@@ -67,7 +68,8 @@
       "image": "cadugrillo/opcua-mqtt-connector:1.5",
       "restart_policy": "always",
       "network": "cg-edge",
-      "env": [],	    
+      "env": [],
+      "ports": [],
       "volumes": ["/home/edge/apps/opcua-mqtt-connector/config:/config"]
     },
     {
